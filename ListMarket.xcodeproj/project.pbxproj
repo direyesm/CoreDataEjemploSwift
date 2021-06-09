@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10E574226714A6A0053EEF9 /* MarketDeatails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E574126714A6A0053EEF9 /* MarketDeatails.swift */; };
 		F170E274266D0261002D5DE1 /* ListMarketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E273266D0261002D5DE1 /* ListMarketApp.swift */; };
 		F170E276266D0261002D5DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E275266D0261002D5DE1 /* ContentView.swift */; };
 		F170E278266D0263002D5DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F170E277266D0263002D5DE1 /* Assets.xcassets */; };
 		F170E27B266D0263002D5DE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F170E27A266D0263002D5DE1 /* Preview Assets.xcassets */; };
+		F170E285266D027F002D5DE1 /* MarketData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F170E283266D027F002D5DE1 /* MarketData.xcdatamodeld */; };
+		F170E289266D0383002D5DE1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170E288266D0383002D5DE1 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10E574126714A6A0053EEF9 /* MarketDeatails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDeatails.swift; sourceTree = "<group>"; };
 		F170E270266D0261002D5DE1 /* ListMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F170E273266D0261002D5DE1 /* ListMarketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMarketApp.swift; sourceTree = "<group>"; };
 		F170E275266D0261002D5DE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F170E277266D0263002D5DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F170E27A266D0263002D5DE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F170E27C266D0263002D5DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F170E284266D027F002D5DE1 /* MarketData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarketData.xcdatamodel; sourceTree = "<group>"; };
+		F170E288266D0383002D5DE1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,14 @@
 		F170E272266D0261002D5DE1 /* ListMarket */ = {
 			isa = PBXGroup;
 			children = (
+				F170E287266D035F002D5DE1 /* Managers */,
 				F170E273266D0261002D5DE1 /* ListMarketApp.swift */,
 				F170E275266D0261002D5DE1 /* ContentView.swift */,
+				F170E283266D027F002D5DE1 /* MarketData.xcdatamodeld */,
 				F170E277266D0263002D5DE1 /* Assets.xcassets */,
 				F170E27C266D0263002D5DE1 /* Info.plist */,
 				F170E279266D0263002D5DE1 /* Preview Content */,
+				F10E574126714A6A0053EEF9 /* MarketDeatails.swift */,
 			);
 			path = ListMarket;
 			sourceTree = "<group>";
@@ -67,6 +76,14 @@
 				F170E27A266D0263002D5DE1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F170E287266D035F002D5DE1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F170E288266D0383002D5DE1 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F170E285266D027F002D5DE1 /* MarketData.xcdatamodeld in Sources */,
 				F170E276266D0261002D5DE1 /* ContentView.swift in Sources */,
+				F170E289266D0383002D5DE1 /* CoreDataManager.swift in Sources */,
+				F10E574226714A6A0053EEF9 /* MarketDeatails.swift in Sources */,
 				F170E274266D0261002D5DE1 /* ListMarketApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +346,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F170E283266D027F002D5DE1 /* MarketData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F170E284266D027F002D5DE1 /* MarketData.xcdatamodel */,
+			);
+			currentVersion = F170E284266D027F002D5DE1 /* MarketData.xcdatamodel */;
+			path = MarketData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F170E268266D0261002D5DE1 /* Project object */;
 }
